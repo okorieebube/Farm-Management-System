@@ -1,0 +1,28 @@
+Options -Indexes
+Options +FollowSymLinks
+Options -MultiViews
+DirectoryIndex index.php
+RewriteEngine on
+
+
+RewriteRule ^welcome/?$ index.php [NC]
+RewriteRule ^faq/?$ faq.php [NC]
+RewriteRule ^afiliate/?$ afiliate.php [NC]
+RewriteRule ^forgot-password/?$ forgot-password.php [NC]
+RewriteRule ^rules/?$ rules.php [NC]
+RewriteRule ^investment/?$ investment.php [NC]
+RewriteRule ^about/?$ about.php [NC]
+RewriteRule ^contact/?$ contact.php [NC]
+RewriteRule ^services/?$ services.php [NC]
+RewriteRule ^end-current-session/?$ logout.php [NC]
+RewriteRule ^support/?$ support.php [NC]
+RewriteRule ^register/?$ register.php [NC]
+RewriteRule ^login/?$ login.php [NC]
+RewriteRule ^how-to-Invest/?$ how-to-Invest.php [NC]
+
+
+
+#ErrorDocument 404 /404.php
+#ErrorDocument 500 /index.php/500/
+#RewriteRule ^(.*)$ admin_login.php?/$1 [NC,L,QSA]
+#RewriteRule ^(.*)$ admin_login.php/$1 [NC,L,QSA]
